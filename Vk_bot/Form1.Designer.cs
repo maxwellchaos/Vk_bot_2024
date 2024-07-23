@@ -80,15 +80,12 @@ namespace Vk_bot
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // buttonTest
+            // button2
             // 
-            this.buttonTest.Location = new System.Drawing.Point(571, 12);
-            this.buttonTest.Name = "buttonTest";
-            this.buttonTest.Size = new System.Drawing.Size(165, 98);
-            this.buttonTest.TabIndex = 8;
-            this.buttonTest.Text = "Добавить друзей из рекомендаций";
-            this.buttonTest.UseVisualStyleBackColor = true;
-            this.buttonTest.Click += new System.EventHandler(this.buttonTest_Click);
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 0;
             // 
             // buttonBotSheduler
             // 
@@ -99,6 +96,37 @@ namespace Vk_bot
             this.buttonBotSheduler.Text = "Перейти на форму";
             this.buttonBotSheduler.UseVisualStyleBackColor = true;
             this.buttonBotSheduler.Click += new System.EventHandler(this.buttonBotSheduler_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // buttonTest
+            // 
+            this.buttonTest.Location = new System.Drawing.Point(571, 12);
+            this.buttonTest.Name = "buttonTest";
+            this.buttonTest.Size = new System.Drawing.Size(165, 98);
+            this.buttonTest.TabIndex = 8;
+            this.buttonTest.Text = "Добавить друзей из рекомендаций";
+            this.buttonTest.UseVisualStyleBackColor = true;
+            this.buttonTest.Click += new System.EventHandler(this.buttonTest_Click);
             // 
             // buttonShedule
             // 
@@ -112,15 +140,11 @@ namespace Vk_bot
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.chromiumWebBrowser2);
-            this.panel1.Controls.Add(this.chromiumWebBrowser1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(844, 457);
+            this.panel1.Size = new System.Drawing.Size(840, 448);
             this.panel1.TabIndex = 10;
             // 
             // chromiumWebBrowser2
@@ -151,12 +175,12 @@ namespace Vk_bot
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 448);
+            this.Controls.Add(this.chromiumWebBrowser1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonShedule);
             this.Controls.Add(this.buttonTest);
-            this.Controls.Add(this.chromiumWebBrowser1);
             this.Controls.Add(this.chromiumWebBrowser2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -164,6 +188,8 @@ namespace Vk_bot
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +205,11 @@ namespace Vk_bot
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonShedule;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private CefSharp.WinForms.ChromiumWebBrowser chromiumWebBrowser2;
+        private System.Windows.Forms.Button buttonTest;
     }
 }
 

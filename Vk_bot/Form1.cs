@@ -17,7 +17,6 @@ namespace Vk_bot
 {
     public partial class Form1 : Form
     {
-        public string Answer { get; private set; }
         string access_token;
         bool isRegistred = true;
 
@@ -36,7 +35,7 @@ namespace Vk_bot
                                            "client_id=8104769&" +
                                            "display=page&" +
                                            "redirect_uri=https://oauth.vk.com/blank.html&" +
-                                           "scope=friends,stories,photos,wall&" +
+                                           "scope=friends,stories,photos,wall,groups&" +
                                            "response_type=token&" +
                                            "v=5.131&" +
                                            "state=jhgugy57yh69876897");
@@ -79,9 +78,8 @@ namespace Vk_bot
                 chromiumWebBrowser1.Hide();
                 string Api;
                 Api = "https://api.vk.com/method/groups.isMember?" + "group_id=226636258&" + access_token + "&v=5.199";
-                WebClient client = new WebClient();
-                client.DownloadData(Api);
-                string Answer = Encoding.UTF8.GetString(client.DownloadData(Api));
+                client = new WebClient();
+                Answer = Encoding.UTF8.GetString(client.DownloadData(Api));
                 textBox1.Text += Answer + "\r\n\r\n\r\n\r\n";
                 if (Answer == "{\"response\":1}")
                 {
@@ -91,7 +89,7 @@ namespace Vk_bot
                 }
                 else
                 {
-                    isRegistred = true;
+                    isRegistred = false;
                 }
                 if (isRegistred == true)
                 {
