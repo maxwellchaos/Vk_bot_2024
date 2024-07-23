@@ -39,11 +39,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(713, 62);
+            this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(131, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Добавить друзей vk ";
+
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -54,9 +55,9 @@
             this.columnHeader2,
             this.columnHeader3});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(34, 12);
+            this.listView1.Location = new System.Drawing.Point(0, 127);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(378, 321);
+            this.listView1.Size = new System.Drawing.Size(308, 321);
             this.listView1.TabIndex = 13;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -78,19 +79,19 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(418, 141);
+            this.textBox1.Location = new System.Drawing.Point(305, 127);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(370, 297);
+            this.textBox1.Size = new System.Drawing.Size(370, 321);
             this.textBox1.TabIndex = 14;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(418, 104);
+            this.progressBar1.Location = new System.Drawing.Point(0, 101);
             this.progressBar1.Maximum = 20;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(370, 31);
+            this.progressBar1.Size = new System.Drawing.Size(675, 31);
             this.progressBar1.TabIndex = 15;
             // 
             // friends_add

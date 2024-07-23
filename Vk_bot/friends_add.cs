@@ -39,7 +39,7 @@ namespace Vk_bot
             client.DownloadData(Api);
             string Anwer = Encoding.UTF8.GetString(client.DownloadData(Api));
             string ruguest = "https://api.vk.com/method/friends.getSuggestions?" +
-                                      "count=10&" +
+                                      "count=100&" +
                                       access_token +
                                        "&v=5.199";
 
@@ -51,10 +51,10 @@ namespace Vk_bot
             for (int index = 0; index < Friends_getSuggestions.response.items.Count; index++)
             {
                
-                    for (int j = 0; j < 100; j++) 
+                    for (int j = 0; j < 1; j++) 
                     {
                         button1.Enabled = false;
-                        Thread.Sleep(20);
+                        Thread.Sleep(1);
                         Application.DoEvents();
                     }
                 progressBar1.Value = index;

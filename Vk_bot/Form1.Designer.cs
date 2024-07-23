@@ -33,8 +33,12 @@ namespace Vk_bot
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.buttonTest = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.buttonBotSheduler = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonTest = new System.Windows.Forms.Button();
             this.buttonShedule = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.chromiumWebBrowser2 = new CefSharp.WinForms.ChromiumWebBrowser();
@@ -46,7 +50,6 @@ namespace Vk_bot
             // chromiumWebBrowser1
             // 
             this.chromiumWebBrowser1.ActivateBrowserOnCreation = false;
-            this.chromiumWebBrowser1.Location = new System.Drawing.Point(-56, 378);
             this.chromiumWebBrowser1.Location = new System.Drawing.Point(12, 216);
             this.chromiumWebBrowser1.Name = "chromiumWebBrowser1";
             this.chromiumWebBrowser1.Size = new System.Drawing.Size(266, 108);
@@ -161,8 +164,6 @@ namespace Vk_bot
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,12 +174,11 @@ namespace Vk_bot
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button buttonTest;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonBotSheduler;
-        private System.Windows.Forms.Button buttonShedule;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private CefSharp.WinForms.ChromiumWebBrowser chromiumWebBrowser2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

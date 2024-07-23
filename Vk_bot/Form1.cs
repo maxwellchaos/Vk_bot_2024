@@ -17,6 +17,7 @@ namespace Vk_bot
 {
     public partial class Form1 : Form
     {
+        public string Answer { get; private set; }
         string access_token;
         bool isRegistred = true;
 
@@ -59,8 +60,6 @@ namespace Vk_bot
                 Url = Url.Remove(Position2);
                 access_token = Url;
 
-
-
                 //Если получили access_token то получаем данные пользователя
                 string ApiRequest;
                 ApiRequest = "https://api.vk.com/method/users.get?"
@@ -78,7 +77,22 @@ namespace Vk_bot
 
                 //после получения access_token скрываем Browser
                 chromiumWebBrowser1.Hide();
+                string Api;
+                Api = "https://api.vk.com/method/groups.isMember?" + "group_id=226636258&" + access_token + "&v=5.199";
+                WebClient client = new WebClient();
+                client.DownloadData(Api);
+                string Answer = Encoding.UTF8.GetString(client.DownloadData(Api));
+                textBox1.Text += Answer + "\r\n\r\n\r\n\r\n";
+                if (Answer == "{\"response\":1}")
+                {
+                    button2.Enabled=true;
+                    button3.Enabled = true;
 
+                }
+                else
+                {
+                    isRegistred = true;
+                }
                 if (isRegistred == true)
                 {
                     panel1.Visible = false;
